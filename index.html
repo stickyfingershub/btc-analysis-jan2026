@@ -3,48 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTC Analysis |Denz Guinzo</title>
+    <title>BTC Analysis | Denz Guinzo</title>
+    
+    <!-- Social Media Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Denz Guinzo | BTC Market Intelligence">
+    <meta name="twitter:description" content="Jan 2026 Market Alpha: Technical Deep Dive & On-Chain Metrics.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0f172a; /* Slate 900 */
-            color: #f1f5f9; /* Slate 100 */
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f1f5f9; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1e293b; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+        .chart-container { position: relative; width: 100%; max-width: 100%; margin: 0 auto; height: 300px; max-height: 400px; overflow: hidden; }
+        @media (min-width: 768px) { .chart-container { height: 350px; } }
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #1e293b;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #3b82f6;
-            border-radius: 4px;
-        }
-
-        /* Chart Container Styling */
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            height: 350px;
-            max-height: 450px;
-            overflow: hidden;
-        }
-
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 400px;
-            }
-        }
-
         /* Gradient Text */
         .text-gradient {
             background: linear-gradient(to right, #22d3ee, #818cf8);
@@ -57,10 +35,6 @@
             border: 1px solid #334155;
         }
     </style>
-    <!-- 
-    Palette Selection: "Cyber/Financial"
-    Updated for Personal Branding
-    -->
 </head>
 <body class="antialiased flex flex-col min-h-screen">
 
@@ -70,151 +44,205 @@
             <div class="flex items-center gap-4">
                 <!-- PERSONAL BRANDING: LOGO/ICON -->
                 <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-sky-500 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-sky-500/20">
-                    <!-- Replace 'DG' with your Initials -->
                     DG
                 </div>
                 <div>
                     <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white">
-                        <!-- PERSONAL BRANDING: TITLE -->
-                        DeGuinz <span class="text-slate-500 font-light">
-                        BTC Market Intelligence</span>
+                           BTC <span class="text-gradient">Market Intelligence™ </span>
                     </h1>
-                    <p class="text-sky-400 text-xs font-semibold tracking-widest uppercase">Jan 2026 Market Alpha</p>
+                    <p class="text-sky-400 text-xs font-semibold tracking-widest uppercase">03 January 2026 | Strategic Outlook </p> 
+                    <p class="text-sky-400 text-xs font-semibold tracking-widest">Denz Guinzo  | Lead Macro Strategic Analyst</p>
                 </div>
             </div>
-            
             <div class="mt-4 md:mt-0 flex gap-4">
-                 <!-- Social Link Placeholder -->
-                <a href="#" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">
-
-                    <!-- X.com Style Logo Component -->
-
-<div class="w-10 h-10 rounded-lg bg-black flex items-center justify-center text-white shadow-lg shadow-slate-700/50">
-
-    <span class="text-2.0x2.0 font-sans">𝕏</span>
-
-</div> @poweredbyether
-                    
+                <a href="#" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white flex items-center gap-2">
+                    <div class="w-6 h-6 rounded bg-black flex items-center justify-center text-white border border-slate-700"><span class="text-xs font-sans">𝕏</span></div> 
+                    @poweredbyether
                 </a>
-                <button class="px-5 py-2 bg-sky-600 hover:bg-sky-500 text-white text-sm font-bold rounded-full transition-all shadow-lg shadow-sky-900/50">
-                    Subscribe to Newsletter
-                </button>
+                <button class="px-5 py-2 bg-sky-600 hover:bg-sky-500 text-white text-sm font-bold rounded-full transition-all shadow-lg">Subscribe</button>
             </div>
         </div>
     </header>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 md:px-12 py-10 space-y-12">
 
-        <!-- SECTION 1: Analyst Profile & Thesis -->
+        <!-- SECTION 1: Analyst Profile & Executive Summary -->
         <section class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            
-            <!-- AUTHOR CARD -->
             <div class="md:col-span-1 card-bg rounded-xl p-6 text-center shadow-lg border-t-4 border-sky-500">
                 <div class="w-24 h-24 mx-auto bg-slate-700 rounded-full mb-4 overflow-hidden ring-4 ring-slate-800">
-                    <!-- PERSONAL BRANDING: PROFILE IMAGE -->
-                    <!-- Replace src with your image URL --> 
-                    <img src="https://pbs.twimg.com/profile_images/2007046608266182656/nU6ou7Hk_400x400.jpg" alt="Analyst Profile" class="w-full h-full object-cover">
+                    <img src="https://pbs.twimg.com/profile_images/2007046608266182656/nU6ou7Hk_400x400.jpg" alt="Profile" class="w-full h-full object-cover">
                 </div>
-                <h3 class="text-lg font-bold text-white">Denz Guinzo</h3>
+                 <h3 class="text-lg font-bold text-white">Denz Guinzo</h3>
                 <p class="text-slate-400 text-xs mb-4">Lead BTC Macro Strategist</p>
-                <div class="flex justify-center gap-2 mb-4">
+                <div class="flex justify-center gap-2 mb-4 flex-wrap">
                     <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">On-Chain</span>
-                <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">Digital Assets</span>
+                    <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">Digital Assets</span>
                     <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">Macro Crypto</span>
-                
                 </div>
                 <p class="text-sm text-slate-400 italic">"Contrarian by nature, data-driven by design."</p>
             </div>
 
-            <!-- EXECUTIVE SUMMARY -->
             <div class="md:col-span-3 space-y-4">
                 <h2 class="text-2xl font-bold text-white flex items-center gap-3">
                     <span class="w-2 h-8 bg-sky-500 rounded-sm"></span>
-                    The 75k Retest Thesis
+                    Executive Summary : The 75k Retest Thesis
                 </h2>
-                <div class="prose prose-invert max-w-none text-slate-300">
-                    <p class="leading-relaxed">
-                        My proprietary market structure analysis for January 2026 signals a high-probability correction. Bitcoin is currently consolidating within a <strong>bearish flag pattern</strong> on the 4-hour and daily timeframes. While the long-term trend remains bullish, driven by ETF inflows and Q1 rate cuts, the immediate technicals point to over-leveraged longs.
-                    </p>
-                    <p class="leading-relaxed">
-                        I am projecting a "flush" to the <strong>$75,000 - $78,000</strong> region. This represents a classic market reset—clearing weak hands and retesting the previous All-Time High breakout zone before momentum returns.
-                    </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <!-- Status Cards -->
+                    <div class="p-4 bg-rose-900/20 border border-rose-500/30 rounded-lg">
+                        <span class="text-xs text-rose-300 uppercase font-bold tracking-wider">Bear Flag Status</span>
+                        <div class="flex items-center justify-between mt-1">
+                            <span class="text-white font-bold">ACTIVE / TESTING</span>
+                            <span class="w-2 h-2 bg-rose-500 rounded-full animate-pulse"></span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-2">Consolidating below resistance. Breakdown probability: High.</p>
+                    </div>
+                    <div class="p-4 bg-amber-900/20 border border-amber-500/30 rounded-lg">
+                        <span class="text-xs text-amber-300 uppercase font-bold tracking-wider">Institutional Flow</span>
+                        <div class="flex items-center justify-between mt-1">
+                            <span class="text-white font-bold">MIXED / PAUSED</span>
+                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-2">ETF inflows slowing; spot selling observed.</p>
+                    </div>
                 </div>
-                
-                <!-- KPI GRID -->
-                <div class="grid grid-cols-3 gap-4 mt-4">
-                    <div class="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                        <span class="block text-xs text-slate-500 uppercase tracking-wide">Current Bias</span>
-                        <span class="text-rose-400 font-bold">Short-Term Bearish</span>
-                    </div>
-                    <div class="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                        <span class="block text-xs text-slate-500 uppercase tracking-wide">Target Entry</span>
-                        <span class="text-emerald-400 font-bold">$75,500</span>
-                    </div>
-                    <div class="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                        <span class="block text-xs text-slate-500 uppercase tracking-wide">Confidence</span>
-                        <span class="text-sky-400 font-bold">High (65%)</span>
-                    </div>
+                <div class="prose prose-invert max-w-none text-slate-300 text-sm">
+                    <p>
+                        Current market structure confirms a <strong>Bearish Consolidation</strong> pattern. Despite the macro bull trend, the immediate technicals—specifically the rejection at the 50-Day MA—point to a leverage flush targeting the <strong>$75,000 - $78,000</strong> region (Golden Pocket 0.618 Fib). 
+                    </p>    
+                    <p class="leading-relaxed">
+                        Although the longer-term trend remains bullish—supported by BTC ETF inflows and expected Federal policy shifts, including potential Q1 rate cuts—the near-term technical picture suggests the market is vulnerable due to an overhang of over-leveraged long positioning. My proprietary market structure assessment for January 2026 therefore indicates an elevated probability of a corrective move in the short term.
+                    </p> 
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 2: Technical Analysis -->
+        <!-- SECTION 2: Technical Deep Dive (MAs, VWAP, Fibs) -->
         <section>
-            <div class="flex justify-between items-end mb-6">
-                <div>
-                    <h2 class="text-2xl font-bold text-white">Technical Projection</h2>
-                    <p class="text-slate-400 text-sm mt-1">Bear Flag Breakdown & VWAP Support Levels</p>
-                </div>
-                <div class="text-right hidden md:block">
-                     <span class="text-xs text-slate-500">Chart Source:</span>
-                     <span class="text-xs text-slate-300 font-mono">Internal Algo</span>
-                </div>
+            <div class="mb-6 border-b border-slate-700 pb-4">
+                <h2 class="text-2xl font-bold text-white">1. Technical Deep Dive</h2>
+                <p class="text-slate-400 text-sm mt-1">Daily MAs, Anchored VWAP, and Fibonacci Confluence</p>
             </div>
             
-            <div class="card-bg rounded-xl p-1 shadow-xl border border-slate-700">
-                <div class="p-4 bg-slate-900/50 border-b border-slate-700 flex justify-between items-center">
-                    <span class="font-mono text-sm text-sky-400">BTC/USD 4H</span>
-                    <div class="flex gap-4">
-                         <div class="flex items-center gap-2">
-                             <span class="w-2 h-2 rounded-full bg-rose-500"></span>
-                             <span class="text-xs text-slate-400">Projection Path</span>
-                         </div>
-                         <div class="flex items-center gap-2">
-                             <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                             <span class="text-xs text-slate-400">Buy Zone</span>
-                         </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Text Analysis -->
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="card-bg p-5 rounded-lg">
+                        <h4 class="text-sky-400 font-bold mb-2">Moving Averages (Daily/Weekly)</h4>
+                        <p class="text-sm text-slate-300">Price is currently struggling to reclaim the <span class="text-orange-400 font-bold">50-Day MA</span> (currently ~$88k). Failure here opens the door to the <span class="text-purple-400 font-bold">200-Day MA</span> which sits lower at ~$72k, acting as ultimate support.</p>
+                    </div>
+                    <div class="card-bg p-5 rounded-lg">
+                        <h4 class="text-emerald-400 font-bold mb-2">Anchored VWAP & Fibs</h4>
+                        <p class="text-sm text-slate-300">The <strong>Anchored VWAP</strong> from the November crash lows aligns perfectly with the <strong>0.618 Fibonacci Retracement</strong> level at $75,500. This confluence creates a "magnetic" zone for price to retest.</p>
+                    </div>
+                    <div class="card-bg p-5 rounded-lg">
+                        <h4 class="text-rose-400 font-bold mb-2">Cross Signals</h4>
+                        <p class="text-sm text-slate-300">No "Death Cross" is imminent, keeping the macro trend bullish. However, momentum oscillators on the Daily are crossing bearish, signaling short-term weakness.</p>
                     </div>
                 </div>
-                <div class="chart-container md:h-[450px] p-4">
-                    <canvas id="priceProjectionChart"></canvas>
+
+                <!-- Main Technical Chart -->
+                <div class="lg:col-span-2 card-bg rounded-xl p-4 shadow-xl">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm font-mono text-slate-400">BTC/USD Daily Projection</span>
+                        <div class="flex gap-3 text-xs">
+                            <span class="flex items-center gap-1"><span class="w-2 h-2 bg-orange-400 rounded-full"></span> 50D MA</span>
+                            <span class="flex items-center gap-1"><span class="w-2 h-2 bg-purple-400 rounded-full"></span> 200D MA</span>
+                            <span class="flex items-center gap-1"><span class="w-2 h-2 bg-emerald-400 rounded-full"></span> VWAP</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="techChart"></canvas>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 3: Data & Probability -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- SECTION 3: Derivatives, Whales & Sentiment -->
+        <section>
+            <div class="mb-6 border-b border-slate-700 pb-4">
+                <h2 class="text-2xl font-bold text-white">2. Market Internals & On-Chain</h2>
+                <p class="text-slate-400 text-sm mt-1">Whale Behavior, Open Interest, and ETF Flows</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Open Interest Chart -->
+                <div class="card-bg rounded-xl p-5">
+                    <h4 class="text-sm font-bold text-slate-200 mb-4 flex items-center gap-2">
+                        Open Interest (Long vs Short)
+                    </h4>
+                    <div class="chart-container" style="height: 200px;">
+                        <canvas id="oiChart"></canvas>
+                    </div>
+                    <p class="text-xs text-rose-400 mt-3">High OI + Negative Funding suggests late shorts are trapped, but recent buildup is leverage longs getting squeezed.</p>
+                </div>
+
+                <!-- Whale Activity -->
+                <div class="card-bg rounded-xl p-5">
+                    <h4 class="text-sm font-bold text-slate-200 mb-4">Whale Activity (>1k BTC)</h4>
+                    <div class="chart-container" style="height: 200px;">
+                        <canvas id="whaleChart"></canvas>
+                    </div>
+                    <p class="text-xs text-amber-400 mt-3">Whales have paused accumulation, distributing slightly into this consolidation.</p>
+                </div>
+
+                <!-- ETF Flows -->
+                <div class="card-bg rounded-xl p-5">
+                    <h4 class="text-sm font-bold text-slate-200 mb-4">Institutional ETF Flows</h4>
+                    <div class="chart-container" style="height: 200px;">
+                        <canvas id="etfFlowChart"></canvas>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-3">Recent days show net outflows, removing immediate buy pressure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Data & Probability -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
             
-            <!-- Probability Gauge -->
+            <!-- PROBABILITY Gauge -->
             <div class="card-bg rounded-xl p-6 shadow-lg">
-                <h3 class="text-lg font-semibold text-white mb-4">Scenario Probability Matrix</h3>
+                <h4 class="text-lg font-bold text-white mb-4">Scenario Probability Matrix</h4>
+
                 <div class="chart-container" style="height: 250px;">
                     <canvas id="probabilityChart"></canvas>
                 </div>
                 
-                    <h3 class="text-lg font-semibold text-white mb-2">My model assigns a 65% probability to the "Dip & Rip" scenario where we flush leverage before resuming the uptrend.</h3>
-                    
-            
+                <h2 class="text-sm font-normal text-slate-300 mt-4">My model assigns a 65% probability to the "Dip & Rip" scenario where we flush leverage before resuming the uptrend.</h2>
             </div>
+        </section>
 
-            <!-- Liquidity Heatmap -->
-            <div class="card-bg rounded-xl p-6 shadow-lg">
-                <h3 class="text-lg font-semibold text-white mb-2">Institutional Liquidity Heatmap</h3>
-                <p class="text-sm text-slate-400 mb-4">
-                    Where are the big players waiting? The bubbles below represent cluster orders. Note the density around $78k.
-                </p>
-                <div class="chart-container">
-                    <div id="plotlyLiquidity" style="width: 100%; height: 100%;"></div>
+        <!-- SECTION 3: Catalysts (Bull vs Bear) -->
+        <section>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-white">3. Catalysts & Scenarios</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Bear Case -->
+                <div class="bg-rose-950/20 border border-rose-900/50 p-6 rounded-xl">
+                    <h3 class="text-rose-400 font-bold text-lg mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
+                        Bear Catalysts (Downside)
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start gap-2"><span class="text-rose-500">•</span> <strong>Yield Curve Control:</strong> Fears of Fed delaying rate cuts due to sticky inflation (CPI print next week).</li>
+                        <li class="flex items-start gap-2"><span class="text-rose-500">•</span> <strong>Liquidation Cascade:</strong> $2B in leveraged longs below $86k could trigger a waterfall event.</li>
+                        <li class="flex items-start gap-2"><span class="text-rose-500">•</span> <strong>Miner Selling:</strong> Post-halving capitulation from smaller miners hitting profitability floors.</li>
+                    </ul>
+                </div>
+
+                <!-- Bull Case -->
+                <div class="bg-emerald-950/20 border border-emerald-900/50 p-6 rounded-xl">
+                    <h3 class="text-emerald-400 font-bold text-lg mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        Bull Catalysts (Upside)
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start gap-2"><span class="text-emerald-500">•</span> <strong>Q1 Rate Cuts:</strong> Confirmation of a 25bps cut in Jan/Feb would ignite risk-on assets.</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500">•</span> <strong>ETF Re-balacing:</strong> Start of quarter portfolio adjustments bringing fresh institutional capital.</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500">•</span> <strong>Sovereign Adoption:</strong> Rumors of nation-state accumulation (e.g., Middle East/Asia).</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -223,46 +251,47 @@
         <section class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
             
-            <h2 class="text-2xl font-bold text-white mb-6">DeGuinz's Execution Strategy</h2>
+            <h2 class="text-2xl font-bold text-white mb-6">Short Position Management Strategy</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-                <div class="p-6 bg-rose-500/5 border border-rose-500/20 rounded-xl">
-                    <h4 class="text-rose-400 font-bold mb-2 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-                        Invalidation (Stop Loss)
-                    </h4>
-                    <p class="text-slate-300 text-sm">
-                        If BTC reclaims <strong>$94,200</strong> on a daily close, the Bear Flag is failed. I will cut shorts immediately.
+                <div>
+                    <h4 class="text-rose-400 font-bold mb-2 text-lg">⚠️ The Risk (Invalidation)</h4>
+                    <p class="text-slate-300 text-sm mb-4">
+                        If BTC reclaims the <strong>$92,500</strong> level on a daily close, the "Bear Flag" is invalidated and transforms into a bullish consolidation. 
+                        <br><br>
+                        <strong>Action:</strong> If price hits $94,200, cut the short immediately. The probability of a "melt-up" to $100k+ increases to 80%.
                     </p>
                 </div>
-                <div class="p-6 bg-emerald-500/5 border border-emerald-500/20 rounded-xl">
-                    <h4 class="text-emerald-400 font-bold mb-2 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        The Target (Take Profit)
-                    </h4>
-                    <p class="text-slate-300 text-sm">
-                        I am layering buy orders from <strong>$78,500 down to $74,500</strong>. I will look to flip net long at $75k with stops below $71k.
+                <div>
+                    <h4 class="text-emerald-400 font-bold mb-2 text-lg">🎯 The Target (Execution)</h4>
+                    <p class="text-slate-300 text-sm mb-4">
+                        Upon a breakdown below <strong>$86,000</strong>, momentum will accelerate. 
+                        <br><br>
+                        <strong>Action:</strong> Set laddered buy-orders (to cover short) starting at $78,500 down to $74,500. Do not wait for exact $75k, as front-running by ETFs is highly likely. Flip long at $75k with a stop below $71k.
                     </p>
                 </div>
+            </div>
             </div>
         </section>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 py-12 border-t border-slate-800 mt-auto">
+    <   <footer class="bg-slate-950 py-12 border-t border-slate-800 mt-auto">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-white font-bold text-lg mb-4"Denz Guinzo - BTC Market Intelligence </h2>
+            <h2 class="text-white font-bold text-lg mb-4">Denz Guinzo - BTC Market Intelligence™</h2>
             <div class="flex justify-center gap-6 mb-8 text-slate-400 text-sm">
-                <a href="#" class="hover:text-white">Twitter</a>
-                <a href="#" class="hover:text-white">Telegram</a>
+                <a href="https://x.com/poweredbyether" target="_blank" class="hover:text-white font bold">𝕏</a>
+                <a href="https://t.me/banklessdegen" target="_blank" class="hover:text-white">Telegram</a>
+                <a href="hhttps://discord.gg/jup" target="_blank" class="hover:text-white">Discord</a>
                 <a href="#" class="hover:text-white">Newsletter</a>
             </div>
-            <p class="white font-bold text-lg mb-4">
+            <p class="text-slate-600 text-xs">
                 &copy; 2026 Denz Guinzo. All rights reserved. <br>
                 Disclaimer: This content is for educational purposes only and does not constitute financial advice.
             </p>
         </div>
     </footer>
+
 
     <!-- JavaScript for Charts -->
     <script>
@@ -302,7 +331,7 @@
                     backgroundColor: [
                         '#0ea5e9', // Sky 500
                         '#10b981', // Emerald 500
-                        '#64748b'  // Slate 500
+                        '#ef4444'  // Red 500
                     ],
                     borderWidth: 0,
                     hoverOffset: 4
@@ -315,11 +344,13 @@
                 plugins: {
                     legend: {
                         position: 'bottom',
+                        align: 'start', // Left align
                         labels: {
                             color: '#cbd5e1',
                             font: { size: 11, family: 'Inter' },
                             usePointStyle: true,
-                            padding: 20
+                            padding: 20,
+                            boxWidth: 8
                         }
                     },
                     tooltip: {
@@ -337,131 +368,131 @@
             plugins: [{
                 id: 'textCenter',
                 beforeDraw: function(chart) {
-                    var width = chart.width,
-                        height = chart.height,
-                        ctx = chart.ctx;
+                    const { ctx, chartArea: { top, bottom, left, right, width, height } } = chart;
+                    
                     ctx.restore();
+                    
+                    // Main Number "65%"
                     var fontSize = (height / 100).toFixed(2);
                     ctx.font = "bold " + fontSize + "em Inter";
                     ctx.textBaseline = "middle";
-                    ctx.fillStyle = "#f1f5f9";
-                    var text = "65%",
-                        textX = Math.round((width - ctx.measureText(text).width) / 2),
-                        textY = height / 2.4;
-                    ctx.fillText(text, textX, textY);
+                    ctx.textAlign = "center";
+                    ctx.fillStyle = "#f1f4f8";
                     
-                    ctx.font = "normal " + (height/240).toFixed(2) + "em Inter";
+                    // CALCULATE CENTER OF CIRCLE (Not Canvas)
+                    // The circle is centered in the chartArea
+                    var centerX = (left + right) / 2;
+                    var centerY = (top + bottom) / 2;
+                    
+                    // Move text slightly up from true center for balance
+                    ctx.fillText("65%", centerX, centerY - 15);
+                    
+                    // Subtitle "Probability"
+                    var subFontSize = (height / 240).toFixed(2);
+                    ctx.font = "normal " + subFontSize + "em Inter";
                     ctx.fillStyle = "#94a3b8";
-                    var subtext = "Probability",
-                        subtextX = Math.round((width - ctx.measureText(subtext).width) / 2),
-                        subtextY = height / 1.7;
-                    ctx.fillText(subtext, subtextX, subtextY);
+                    
+                    ctx.fillText("Probability", centerX, centerY + 25);
+                    
                     ctx.save();
                 }
             }]
         });
 
-        // --- CHART 2: PRICE PROJECTION (Chart.js) ---
-        const ctxPrice = document.getElementById('priceProjectionChart').getContext('2d');
-        const labelsPrice = ['Dec 15', 'Dec 17', 'Dec 19', 'Dec 21', 'Dec 23', 'Dec 25', 'Dec 27', 'Dec 29', 'Dec 31', 'Jan 2 (Today)', 'Jan 4', 'Jan 6', 'Jan 8', 'Jan 10', 'Jan 12', 'Jan 14', 'Jan 16'];
+        // --- 1. TECHNICAL CHART (MAs, VWAP, Price) ---
+        const ctxTech = document.getElementById('techChart').getContext('2d');
+        const labels = ['Dec 15','Dec 17','Dec 19','Dec 21','Dec 23','Dec 25','Dec 27','Dec 29','Dec 31','Jan 2','Jan 4','Jan 6','Jan 8','Jan 10','Jan 12','Jan 14','Jan 16'];
         
-        new Chart(ctxPrice, {
+        new Chart(ctxTech, {
             type: 'line',
             data: {
-                labels: labelsPrice,
+                labels: labels,
                 datasets: [
                     {
-                        label: 'Historical',
-                        data: [92000, 93500, 91000, 94000, 92500, 90000, 88500, 89500, 88000, 89000, null, null, null, null, null, null, null],
-                        borderColor: '#64748b',
-                        borderWidth: 2,
-                        pointRadius: 0,
-                        tension: 0.3
+                        label: 'BTC Price',
+                        data: [92000,93500,91000,94000,92500,90000,88500,89500,88000,89000,86000,82000,78000,75500,76000,81000,85000], // Historic + Projected
+                        borderColor: '#0ea5e9', borderWidth: 2, tension: 0.3, pointRadius: 2
                     },
                     {
-                        label: 'My Projection',
-                        data: [null, null, null, null, null, null, null, null, null, 89000, 86000, 82000, 78000, 75500, 76000, 81000, 85000],
-                        borderColor: '#0ea5e9',
-                        backgroundColor: 'rgba(14, 165, 233, 0.1)',
-                        borderWidth: 3,
-                        borderDash: [5, 5],
-                        fill: true,
-                        pointRadius: 4,
-                        pointHoverRadius: 6,
-                        tension: 0.4
+                        label: '50D MA',
+                        data: Array(17).fill(88000), // Simulated MA Level
+                        borderColor: '#fb923c', borderWidth: 1, borderDash: [5,5], pointRadius: 0
                     },
                     {
-                        label: 'Buy Zone',
-                        data: Array(17).fill(75000),
-                        borderColor: '#10b981',
-                        borderWidth: 1,
-                        pointRadius: 0,
-                        borderDash: [2, 2]
+                        label: '200D MA',
+                        data: Array(17).fill(72000), // Simulated MA Level
+                        borderColor: '#c084fc', borderWidth: 1, borderDash: [5,5], pointRadius: 0
+                    },
+                    {
+                        label: 'Anchored VWAP',
+                        data: [76000,76200,76500,76800,77000,77200,77500,77800,78000,78200,78500,78800,79000,79200,79500,79800,80000],
+                        borderColor: '#34d399', borderWidth: 2, pointRadius: 0
                     }
                 ]
             },
             options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    y: {
-                        grid: { color: '#334155' },
-                        ticks: { color: '#94a3b8' }
-                    },
-                    x: {
-                        grid: { display: false },
-                        ticks: { color: '#94a3b8', maxTicksLimit: 8 }
-                    }
-                },
-                plugins: {
-                    legend: { labels: { color: '#cbd5e1' } },
-                    tooltip: {
-                        mode: 'index',
-                        intersect: false,
-                        callbacks: {
-                            title: function(tooltipItems) {
-                                const item = tooltipItems[0];
-                                let label = item.chart.data.labels[item.dataIndex];
-                                if (Array.isArray(label)) return label.join(' ');
-                                return label;
-                            }
-                        }
-                    }
-                }
+                responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } },
+                scales: { y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } }, x: { display: false } }
             }
         });
 
-        // --- CHART 3: LIQUIDITY MAP (Plotly.js) ---
-        const plotlyDiv = document.getElementById('plotlyLiquidity');
-        
-        var trace1 = {
-            x: ['$70k', '$72k', '$74k', '$76k', '$78k', '$80k', '$82k', '$84k', '$86k', '$88k', '$90k'],
-            y: ['Order Volume'],
-            mode: 'markers',
-            marker: {
-                size: [10, 15, 25, 45, 60, 30, 15, 10, 10, 20, 40],
-                color: [
-                    '#10b981', '#10b981', '#10b981', '#10b981', '#10b981', 
-                    '#10b981', '#64748b', '#64748b', '#f43f5e', '#f43f5e', '#f43f5e'
-                ],
-                opacity: 0.8
-            }
-        };
-
-        var layout = {
-            paper_bgcolor: 'rgba(0,0,0,0)',
-            plot_bgcolor: 'rgba(0,0,0,0)',
-            xaxis: { 
-                gridcolor: '#334155', 
-                tickfont: { color: '#94a3b8' } 
+        // ---  OPEN INTEREST CHART (Stacked Bar) ---
+        const ctxOi = document.getElementById('oiChart').getContext('2d');
+        new Chart(ctxOi, {
+            type: 'bar',
+            data: {
+                labels: ['Dec 27','Dec 28','Dec 29','Dec 30','Dec 31','Jan 1','Jan 2'],
+                datasets: [
+                    { label: 'Longs', data: [55, 58, 62, 65, 68, 70, 72], backgroundColor: '#10b981' },
+                    { label: 'Shorts', data: [45, 42, 38, 35, 32, 30, 28], backgroundColor: '#f43f5e' }
+                ]
             },
-            yaxis: { visible: false },
-            margin: { t: 20, b: 30, l: 30, r: 30 },
-            showlegend: false
-        };
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                scales: { x: { stacked: true, display: false }, y: { stacked: true, display: false } },
+                plugins: { legend: { position: 'bottom', labels: { color: '#cbd5e1', boxWidth: 8 } } }
+            }
+        });
 
-        Plotly.newPlot(plotlyDiv, [trace1], layout, {responsive: true, displayModeBar: false});
+        // ---  WHALE ACTIVITY CHART (Line) ---
+        const ctxWhale = document.getElementById('whaleChart').getContext('2d');
+        new Chart(ctxWhale, {
+            type: 'line',
+            data: {
+                labels: ['Dec 27','Dec 28','Dec 29','Dec 30','Dec 31','Jan 1','Jan 2'],
+                datasets: [{
+                    label: 'Wallets >1k BTC',
+                    data: [1560, 1562, 1565, 1563, 1560, 1558, 1555], // Distributing slightly
+                    borderColor: '#fbbf24', backgroundColor: 'rgba(251, 191, 36, 0.1)', fill: true, tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                scales: { x: { display: false }, y: { display: false } },
+                plugins: { legend: { display: false } }
+            }
+        });
 
+        // ---  ETF FLOW CHART ---
+        const ctxEtf = document.getElementById('etfFlowChart').getContext('2d');
+        const etfData = [300, -50, -120, 50, -200, -350, 0, -150];
+        new Chart(ctxEtf, {
+            type: 'bar',
+            data: {
+                labels: ['Dec 26', 'Dec 27', 'Dec 28', 'Dec 29', 'Dec 30', 'Dec 31', 'Jan 1', 'Jan 2'],
+                datasets: [{
+                    data: etfData,
+                    backgroundColor: etfData.map(val => val >= 0 ? '#10b981' : '#f43f5e'),
+                    borderRadius: 2
+                }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                scales: { x: { display: false }, y: { display: false } },
+                plugins: { legend: { display: false } }
+            }
+        });
     </script>
 </body>
 </html>
